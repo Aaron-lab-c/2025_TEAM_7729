@@ -46,7 +46,7 @@ conda activate <env_name>             # 啟用（名稱以 YAML 中的 name 為�
 ### Task 1 — 取得轉錄結果 (雲端執行)
 
 1. 打開 **Google Colab**，上傳並開啟 `hf2ct-colab.ipynb`。
-2. 依 Notebook 指示 **手動下載** ASR 模型權重並放置於指定路徑。
+2. **下載** ASR 模型權重並放置於指定路徑。
 3. 全部執行完畢後，Colab 會輸出：
 
    ```
@@ -61,7 +61,7 @@ conda activate <env_name>             # 啟用（名稱以 YAML 中的 name 為�
 | 2‑a | `標點符號處理_STEP1.ipynb`                               | `task1_answer_timestamps_cleaned.json` | 初步清洗標點                                          |
 | 2‑b | **手動**：將上一步輸出檔重新命名為 `task1_answer_timestamps.json` |                                        | 覆寫舊檔以供下一步使用                                     |
 | 2‑c | `標點符號後處理日期_STEP2.ipynb`                            | —                                      | 二次標點／日期修正                                       |
-| 3   | `AICUP2025_Phase1_Dataset.ipynb`                   | —                                      | 從「Task2」註記開始執行；若僅推論，可直接跳至 *Load finetune model* |
+| 3   | `AICUP2025_Phase1_Dataset.ipynb`                   | —                                      | 從「Task2」註記開始執行；若僅推論，可直接跳至 *Load finetune model*，但是仍然需要先import必要套件。 |
 
 > **提示**：若不需微調，可在載入必要套件後，直接跳到 Notebook 裡的 `Load finetune model` 區塊。此外，`AICUP2025_Phase1_Dataset.ipynb`不需要跑Task1部分，因為已經在`hf2ct-colab.ipynb`做過了。
 
